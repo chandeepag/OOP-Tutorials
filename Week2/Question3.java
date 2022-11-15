@@ -1,13 +1,13 @@
 package Week2;
+import java.awt.Rectangle;
 
-
-//print even numbers between 0-100
 public class Question3 {
     public static void main(String[] args) {
-        for (int i=2; i<100;i+=2) {
-            if (i%2==0){
-                System.out.println(i);
-            }
-        }
+        Rectangle r1 = new Rectangle(0, 0, 100, 50);
+        Rectangle r2 = r1;
+        r2.grow(10,20);
+
+        System.out.println(r1);
+        System.out.println(r2);
     }
 }
